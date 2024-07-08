@@ -1,20 +1,25 @@
 import React from 'react'
 import { IoAddCircle } from 'react-icons/io5'
-import { createBrowserRouter } from 'react-router-dom'
-import CreateOrder1 from './Pages/CreateOrder1.jsx'
+import { createBrowserRouter, Outlet, RouterProvider, useNavigate } from 'react-router-dom'
+import BasicTabs from './Pages/BasicTabs'
+import HorizontalLinearStepper from './Pages/HorizontalLinearStepper'
+// import { createOrderAction } from './Pages/HorizontalLinearStepper'
 
 const Home = () => {
-  const router = createBrowserRouter([
-    {
-      path: '/createOrder1',
-      element: <CreateOrder1 />
-    }, {}
-  ])
+  const navigate = useNavigate();
   return (
-    <div>
-      <div className='AddNew'>
-        <IoAddCircle className='AddNewMenu' router={router} />
+
+    <div className='TabIndex'>
+      <div className='TabularBox'>
+
+        <BasicTabs />
+
       </div>
+
+      <div className='AddNew'>
+        <IoAddCircle className='AddNewMenu' onClick={() => navigate("/createorder")} />
+      </div>
+
     </div>
   )
 }

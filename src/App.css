@@ -1,3 +1,8 @@
+* {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
 .Navbar {
   background-color: black;
   height: 67px;
@@ -55,4 +60,134 @@
   right: 70px;
   cursor: pointer;
   position: absolute;
+}
+
+.Box {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  /* align-items: end; */
+}
+
+.MobileStepper {
+  background-color: aqua;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.NextButton {
+  /* background-color: aqua; */
+  font-size: large;
+  /* width: 100%; */
+  /* height: 30px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.TabularBox {
+  border: 1px solid black;
+  width: auto;
+  height: auto;
+}
+
+
+.TabIndex {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.Active-Cart {
+  margin-top: 0px;
+
+}
+
+
+.MenuBox {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.MenuBoxButton {
+  height: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: yellow;
+  border: 0px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.ToMakeItCentre {
+  margin-top: 20px;
+  width: 1200px;
+  height: auto;
+  /* background-color: aqua; */
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.ContainerBox {
+  width: 600px;
+  height: 70px;
+  /* background-color: aqua; */
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+.KeyBox {
+  width: 30px;
+  height: 30px;
+}
+
+.titleandcheckbox {
+  width: 900px;
+  height: auto;
+  /* background-color: aqua; */
+
+}
+
+.items-container {
+  text-align: left;
+}
+
+.kg-button {
+  min-width: 80px;
+}
+
+.kg-row {
+  margin: 10px 5px;
 }
